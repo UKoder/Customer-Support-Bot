@@ -1,0 +1,5 @@
+Login Issues:
+If you forgot your password, please click on the "Forgot Password" link on the login page.
+Enter the email address associated with your account, and we will send you a link to reset your password.
+If you are locked out of your account after too many failed attempts, please wait 30 minutes before trying again.
+If you still cannot access your account, please contact support and provide your Customer ID so we can manually verify your identity and unlock your account.
