@@ -18,19 +18,19 @@ Open your terminal in the project folder and run:
 docker login
 
 # Build the image
-docker build -t your-username/synthetix-app:latest .
+docker build -t your-username/customer-support-bot:latest .
 
 # Push it to the cloud
-docker push your-username/synthetix-app:latest
+docker push your-username/customer-support-bot:latest
 ```
 
 ### 2. Pull and Run (On the Other PC)
 ```bash
 # Pull the image from the cloud
-docker pull your-username/synthetix-app:latest
+docker pull your-username/customer-support-bot:latest
 
 # Run the container
-docker run -p 8000:8000 your-username/synthetix-app:latest
+docker run -p 8000:8000 your-username/customer-support-bot:latest
 ```
 
 ---
@@ -41,20 +41,20 @@ If you don't want to use an online registry, you can export the image as a file.
 ### 1. Export the Image (On your PC)
 ```bash
 # Build the image locally
-docker build -t synthetix-local:latest .
+docker build -t customer-support-bot-local:latest .
 
 # Save it to a .tar file
-docker save -o synthetix-app.tar synthetix-local:latest
+docker save -o customer-support-bot.tar customer-support-bot-local:latest
 ```
-Copy `synthetix-app.tar` to a USB drive or send it to the other PC.
+Copy `customer-support-bot.tar` to a USB drive or send it to the other PC.
 
 ### 2. Import and Run (On the Other PC)
 ```bash
 # Load the image from the file
-docker load -i synthetix-app.tar
+docker load -i customer-support-bot.tar
 
 # Run the container
-docker run -p 8000:8000 synthetix-local:latest
+docker run -p 8000:8000 customer-support-bot-local:latest
 ```
 
 ---
@@ -62,7 +62,7 @@ docker run -p 8000:8000 synthetix-local:latest
 ## Running with Docker Compose
 Since your project already has a [docker-compose.yml](file:///c:/Users/DELL/OneDrive/Desktop/synthetix%204.0/docker-compose.yml), you can also just share the source code and run:
 
-1. Copy the entire `synthetix 4.0` folder to the other PC.
+1. Copy the entire project folder to the other PC.
 2. Open a terminal in that folder on the other PC.
 3. Run:
    ```bash
